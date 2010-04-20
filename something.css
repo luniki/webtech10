@@ -2,5 +2,9 @@
  * will be included in your presentation */
 
 .title-slide h1 {
-  color: blue;
+/*  color: blue;*/
+}
+
+.centered-text {
+  text-align: center;
 }
