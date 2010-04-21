@@ -1,14 +1,16 @@
 !SLIDE subsection
 # History #
 
+!SLIDE center
+![brendan](brendan.jpg)
+
 !SLIDE
 ## JS, unlike Python, was a rushed little hack for Netscape 2 that was then frozen prematurely during the browser wars, and evolved significantly only once by ECMA.
 * http://weblogs.mozillazine.org/roadmap/archives/2006/02/js_and_python_news.html
 
 !SLIDE bullets
-* C, C++, Java
-* Self
-* Scheme
+* Syntax: C, Java
+* Design Principles: Self, Scheme
 
 !SLIDE bullets TODO
 
