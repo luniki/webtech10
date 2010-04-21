@@ -1,7 +1,7 @@
 !SLIDE bullets
 
 # Slides #
-* http://heroku.com
+* http://webtech10.heroku.com
 * http://github.com/luniki/webtech10
 
 !SLIDE bullets
