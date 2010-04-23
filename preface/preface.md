@@ -1,16 +1,23 @@
-!SLIDE title-slide
+!SLIDE subsection
+# Why JavaScript?
 
-# Preface #
+!SLIDE bullets
+## Most Successful Scripting Language? ##
 
-!SLIDE
-# Why
+* implementations
+* deployed interpreters
+* lines of code
+
+!SLIDE bullets
+## good parts ##
+* functions
+* loose typing
+* dynamic objects
+* expressive object literal notation
 
 
-* good ideas
-** functions
-** loose typing
-** dynamic objects
-** expressive object literal notation
-* bad ideas
-** programming model based on global variables
-
+!SLIDE bullets
+## bad parts ##
+* legacy
+* good intentions
+* haste

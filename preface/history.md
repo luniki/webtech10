@@ -18,6 +18,14 @@
 !SLIDE center
 ![hypercard](hypercard.jpg)
 
+!SLIDE smbullets
+## HyperCard ##
+* stack of virtual cards
+* cards contain "forms"
+* *buttons, text fields …*
+* HyperTalk
+* *put 15 into total*
+
 !SLIDE center
 ![brendan](brendan.jpg)
 
