@@ -56,35 +56,84 @@
 
 
 !SLIDE
-# Numbers
-
-!SLIDE
-# Strings
-
-!SLIDE
-# Statements
-
-!SLIDE
-# Expressions
-
-!SLIDE
-# Literals
-
-!SLIDE
-# Functions
-
-!SLIDE
 # Objects
 
+passed by reference not value
+
+
+!SLIDE
+# Number
+
+!SLIDE
+# Boolean
+truthy + falsy
+
+!SLIDE
+# String
+
+!SLIDE
+# Array
+
+!SLIDE
+# RegExp
+
 !SLIDE
 # Functions
+
+!SLIDE
+# null
+
+!SLIDE
+# undefined
+
+!SLIDE bullets
+# Operators
+*  +   -    *   /    %
+* ==    !=   <    >    <= >=
+* === !==
+* && || !
+• & | ^ >> >>> <<
+* ?:
+
+!SLIDE
+# addition
+
+!SLIDE
+# division
+
+!SLIDE
+# type coercion
+
+'' == '0'          // false
+0 == ''            // true
+0 == '0'           // true
+false == 'false'   // false
+false == '0'       // true
+false == undefined // false
+false == null      // false
+null == undefined // true
+
+!SLIDE
+# &&
+
+!SLIDE
+# ||
+
+!SLIDE smbullets
+# Statements #
+* if
+* switch
+* while
+* do
+* for
+* break
+* continue
+* return
+* try/throw
+
+!SLIDE
+# for in #
 
 !SLIDE
 # Inheritance
-
-!SLIDE
-# Arrays
-
-!SLIDE
-# Regular Expressions
 
