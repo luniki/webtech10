@@ -1,7 +1,7 @@
 !SLIDE full-page TODO
 
 ![ecma](ecmaspec.jpg)
-> TODO URL
+> http://www.ecma-international.org/publications/standards/Ecma-262.htm
 
 !SLIDE full-page
 
