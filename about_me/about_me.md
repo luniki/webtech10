@@ -7,3 +7,11 @@
 
 * ELAN e.V.
 * Zentrum virtUOS
+
+!SLIDE center
+![studip](studip.png)
+
+
+!SLIDE center
+![opencast](opencast.png)
+
