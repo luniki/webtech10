@@ -21,3 +21,7 @@
 * legacy
 * good intentions
 * haste
+
+!SLIDE
+
+TODO Firebug or other REPL
