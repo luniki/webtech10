@@ -56,15 +56,10 @@
 !SLIDE subsection
 # Types
 
-!SLIDE
-# Objects
-
-call by sharing
-
-
 !SLIDE bullets
 # Number
 
+* single number type
 * only 64 bit float (IEE 754 double)
 * no integers
 
@@ -102,12 +97,244 @@ call by sharing
 	parseInt("010", 10);
 	> 10
 
-!SLIDE
-# Boolean
-truthy + falsy
+!SLIDE bullets
+# String
+
+* UCS 2 (not UTF-16)
+* immutable
+* "foo" === "foo"
+* 'bar' or "bar"
+
+!SLIDE execute
+
+	@@@ javaScript
+	var num = 23;
+	result = num.toString();
+
+!SLIDE execute
+
+# length Property #
+
+	@@@ javaScript
+	// wrong w/ surrogate pairs
+	result = "23".length;
 
 !SLIDE
-# String
+# String methods
+
+	@@@ javaScript
+	charAt charCodeAt concat indexOf
+	lastIndexOf localeCompare match
+	replace search slice split substr
+	substring toLowerCase toString
+	toUpperCase valueOf
+
+!SLIDE
+# Boolean #
+	@@@ javaScript
+	true false
+
+!SLIDE smbullets
+# falsy #
+* false
+* null
+* undefined
+* "" (empty string)
+* 0
+* NaN
+
+!SLIDE bullets
+# truthy #
+* everything else
+
+!SLIDE bullets
+# Variables #
+
+!SLIDE
+# new variables with var #
+
+	@@@ javaScript
+	var name = "hoge";
+
+!SLIDE execute
+
+	@@@ javaScript
+	var a;
+	result = a;
+
+!SLIDE bullets
+# undefined #
+* primitive value used when a variable has not been assigned a value
+
+!SLIDE bullets
+# null #
+* primitive value that represents the intentional absence of any object value.
+
+!SLIDE
+# Operators #
+
+!SLIDE
+# Arithmetic #
+	+ - * / %
+
+!SLIDE
+# Comparison #
+	=== !===
+	== !=
+	< > <= >=
+
+!SLIDE
+# Compound assignment #
+	+= -= *= /= %=
+
+!SLIDE
+# Logical #
+	&& || !
+
+!SLIDE
+# Bitwise #
+	& | ^ >> >>> <<
+
+!SLIDE
+# Ternary Operator #
+	true ? "hoge" : "fuga"
+
+!SLIDE
+# Increment and decrement #
+	++fuga --fuga
+	hoge++ hoge--
+
+!SLIDE
+# Concatenation #
+	"foo" + "bar"
+
+!SLIDE bullets
+# + #
+* addition and concatenation
+* both numbers: add them
+* else: convert to strings and concat
+
+!SLIDE execute
+	@@@ javaScript
+	result = "¥" + 4 + 2
+
+!SLIDE execute
+# / #
+
+	@@@ javaScript
+	result = 23 / 13
+
+!SLIDE bullets
+# == != #
+* equal/not equal use type coercion
+* use === and !== instead
+
+!SLIDE
+	@@@ javaScript
+	   '' == '0'       // false
+	    0 == ''        // true
+	    0 == '0'       // true
+
+	false == 'false'   // false
+	false == '0'       // true
+
+	false == undefined // false
+	false == null      // false
+	null  == undefined // true
+
+!SLIDE bullets
+# && #
+* guard operator
+* first operand truthy: second operand
+* else: first operand
+* useful for checking for null objects before accessing their attributes
+* var foo = o && o.getFoo();
+
+!SLIDE bullets
+# || #
+* default operator
+* first operand truthy: first operand
+* else: second operand
+* for setting default values:
+* var hoge = otherHoge || "default";
+
+!SLIDE
+# typeof #
+
+	@@@ javaScript
+	typeof aNumber     === 'number'
+	typeof aString     === 'string'
+	typeof aBoolean    === 'boolean'
+	typeof aFunction   === 'function'
+	typeof anObject    === 'object'
+	typeof anArray     === 'object'    // !
+	typeof aNull       === 'object'    // !
+	typeof anUndefined === 'undefined'
+
+
+!SLIDE
+# Statements #
+
+!SLIDE
+	@@@ javaScript
+	if (name == "foo") {
+		//
+	} else {
+		//
+	}
+
+!SLIDE
+	@@@ javaScript
+	switch(1 + 3) {
+
+		case 2 + 2:
+			doIt();
+			break;
+
+		default:
+			neverHappens();
+	}
+
+!SLIDE
+	@@@ javaScript
+	while (true) {
+		neverEndingStory();
+	}
+
+!SLIDE
+	@@@ javaScript
+	do {
+		matchHere(text);
+	} while (text = text.substr(1));
+
+!SLIDE
+	@@@ javaScript
+	for (i = 0; i < array.length; i += 1) {
+		alert(array[i]);
+	}
+
+!SLIDE bullets
+# Completion Specification Type #
+* break
+* continue
+* return
+* try/throw
+
+!SLIDE
+	@@@ javaScript
+	for (name in object) {
+		if (object.hasOwnProperty(name)) {
+			doSomething(object[name]);
+		}
+	}
+
+
+
+
+!SLIDE
+# Objects
+
+call by reference (sharing)
 
 !SLIDE
 # Array
@@ -117,60 +344,6 @@ truthy + falsy
 
 !SLIDE
 # Functions
-
-!SLIDE
-# null
-
-!SLIDE
-# undefined
-
-!SLIDE bullets
-# Operators
-*  +   -    *   /    %
-* ==    !=   <    >    <= >=
-* === !==
-* && || !
-* & | ^ >> >>> <<
-* ?:
-
-!SLIDE
-# addition
-
-!SLIDE
-# division
-
-!SLIDE
-# type coercion
-
-'' == '0'          // false
-0 == ''            // true
-0 == '0'           // true
-false == 'false'   // false
-false == '0'       // true
-false == undefined // false
-false == null      // false
-null == undefined // true
-
-!SLIDE
-# &&
-
-!SLIDE
-# ||
-
-!SLIDE smbullets
-# Statements #
-* if
-* switch
-* while
-* do
-* for
-* break
-* continue
-* return
-* try/throw
-
-!SLIDE
-# for in #
 
 !SLIDE
 # Inheritance
