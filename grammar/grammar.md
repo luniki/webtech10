@@ -331,20 +331,152 @@
 
 
 
-!SLIDE
-# Objects
+!SLIDE subsection
+# Objects #
 
-call by reference (sharing)
+!SLIDE
+# collection of dynamic properties #
+# call by reference (sharing) #
+
+!SLIDE
+	@@@ javaScript
+	// get
+	object.name
+	object[expression]
+
+	// set
+	object.name = value;
+	object[expression] = value;
+
+	// delete
+	delete object.name
+	delete object[expression]
+
+!SLIDE
+# Object literals #
+	@@@ javaScript
+	var foo = {bar: 23, baz: "hoge"};
+
 
 !SLIDE
 # Array
 
+!SLIDE bullets
+# Arrays
+* are objects
+* indexes are converted to strings
+* good for sparse arrays
+* otherwise bad performance
+* pro: no dimension necessary
+
 !SLIDE
-# RegExp
+# Array literals #
+
+	@@@ javaScript
+	var cities = ["Adrilankha", "Northport", "Candletown"];
+
+!SLIDE execute
+# special length property #
+
+	@@@ javaScript
+	var anArray = ["foo"];
+	anArray[100] = "bar;
+	result = anArray.length;
+
+!SLIDE
+# Appending elements #
+
+	@@@ javaScript
+	cities[cities.length] = "Fenario";
+
+!SLIDE
+# Iterating #
+
+	@@@ javaScript
+	for (var i = 0; i < cities.length; i++) {
+		doIt(a[i]);
+	}
+
+!SLIDE
+# Delete #
+
+	@@@ javaScript
+
+	// w/ holes
+	delete array[number]
+
+	// w/o holes
+	array.splice(number, 1)
+
+!SLIDE smbullets
+# Array methods #
+
+* a.toString()
+* a.concat(item, ..), a.join(sep)
+* a.pop(), a.push(item, ..)
+* a.reverse(), a.sort(cmpfn)
+* a.shift(), a.unshift([item]..)
+* a.slice(start, end)
+* a.splice(start, delcount, [item]..)
+
+!SLIDE execute
+# sort #
+
+	@@@ javaScript
+	result = [4, 8, 10].sort();
+
+
+!SLIDE subsection
+# Regular Expressions #
+
+!SLIDE bullets
+* straight from Perl
+* regexp.exec, regexp.test
+* string.match, string.replace
+* string.search, string.split
+
+!SLIDE execute
+	@@@ javaScript
+	var header = "Content-Type: text/html";
+	result = /^(.*): (.*)$/.exec(header);
+
+!SLIDE execute
+	@@@ javaScript
+	var header = "Content-Type: text/html";
+	result = /^(.*): (.*)$/.test(header);
+
+!SLIDE execute
+	@@@ javaScript
+	var header = "Content-Type: text/html";
+	result = header.match(/^(.*): (.*)$/);
+
+!SLIDE execute
+	@@@ javaScript
+	var header = "Content-Type: text/html";
+	result = header.replace(/^(.*): (.*)$/, "$1=$2");
+
+!SLIDE execute
+	@@@ javaScript
+	var header = "Content-Type: text/html";
+	result = header.search(/: /);
+
+!SLIDE execute
+	@@@ javaScript
+	var header = "Content-Type: text/html";
+	result = header.split(/: /);
+
 
 !SLIDE
 # Functions
 
 !SLIDE
 # Inheritance
+
+classes vs prototypes
+
+working with prototypes
+make an object you like
+create new instances inheriting from that
+customize new objects
+classification not necessary
 
