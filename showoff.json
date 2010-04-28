@@ -4,5 +4,7 @@
   {"section":"books"},
   {"section":"preface"},
   {"section":"grammar"},
+  {"section":"dom"},
+  {"section":"final"},
   {"section":"attributions"}
 ]

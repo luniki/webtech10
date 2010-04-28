@@ -1,3 +1,8 @@
+!SLIDE bullets TODO
+* object-oriented language
+* no provisions for IO
+* host-environment
+
 !SLIDE subsection
 # Why JavaScript?
 

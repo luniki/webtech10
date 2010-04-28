@@ -1,4 +1,4 @@
-!SLIDE full-page TODO
+!SLIDE full-page
 
 ![ecma](ecmaspec.jpg)
 > http://www.ecma-international.org/publications/standards/Ecma-262.htm

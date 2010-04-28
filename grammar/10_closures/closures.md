@@ -3,8 +3,8 @@
 
 !SLIDE bullets
 * You can define functions in functions.
-* context of inner functions includes the scope of their outer functions
-* even for inner functions living longer than their outer functions
+* Inner functions can access params + variables of their outer functions.
+* Even true for inner functions living longer than their outer functions.
 
 !SLIDE execute
 # Global #
