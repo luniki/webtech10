@@ -43,7 +43,7 @@ So he did that. He combined elements of three languages: Java, because he was to
 ## JS, unlike Python, was a rushed little hack for Netscape 2 that was then frozen prematurely during the browser wars, and evolved significantly only once by ECMA.
 * http://weblogs.mozillazine.org/roadmap/archives/2006/02/js_and_python_news.html
 
-!SLIDE smbullets incremental
+!SLIDE smbullets
 * LiveScript
 * JavaScript (1995)
 * JScript (1996)

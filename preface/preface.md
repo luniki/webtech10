@@ -14,7 +14,7 @@
 * lines of code
 
 !SLIDE bullets
-## good parts ##
+## Good parts ##
 * functions
 * loose typing
 * dynamic objects
@@ -22,11 +22,11 @@
 
 
 !SLIDE bullets
-## bad parts ##
+## Bad parts ##
 * legacy
 * good intentions
 * haste
 
-!SLIDE
+!SLIDE TODO
 
 TODO Firebug or other REPL
