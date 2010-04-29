@@ -5,7 +5,9 @@
 # Array literals #
 
 	@@@ javaScript
-	var cities = ["Adrilankha", "Northport", "Candletown"];
+	var cities = ["Adrilankha",
+	              "Northport",
+	              "Candletown"];
 
 !SLIDE bullets
 # Arrays
