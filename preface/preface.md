@@ -1,4 +1,4 @@
-!SLIDE bullets TODO
+!SLIDE bullets
 * object-oriented language
 * no provisions for IO
 * host-environment
@@ -27,6 +27,11 @@
 * good intentions
 * haste
 
-!SLIDE TODO
+!SLIDE center
+![firebug](firebug.png)
 
-TODO Firebug or other REPL
+!SLIDE
+# JavaScript Online REPL #
+### *read-eval-print loop* ###
+
+##http://www.squarefree.com/shell/shell.html##
