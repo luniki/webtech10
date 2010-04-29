@@ -1,5 +1,11 @@
-!SLIDE
+!SLIDE subsection
 # Array
+
+!SLIDE
+# Array literals #
+
+	@@@ javaScript
+	var cities = ["Adrilankha", "Northport", "Candletown"];
 
 !SLIDE bullets
 # Arrays
@@ -9,18 +15,14 @@
 * otherwise bad performance
 * pro: no dimension necessary
 
-!SLIDE
-# Array literals #
-
-	@@@ javaScript
-	var cities = ["Adrilankha", "Northport", "Candletown"];
-
 !SLIDE execute
-# special length property #
+# length property #
 
 	@@@ javaScript
 	var anArray = ["foo"];
-	anArray[100] = "bar;
+
+	anArray[100] = "bar";
+
 	result = anArray.length;
 
 !SLIDE
@@ -58,10 +60,4 @@
 * a.shift(), a.unshift([item]..)
 * a.slice(start, end)
 * a.splice(start, delcount, [item]..)
-
-!SLIDE execute
-# sort #
-
-	@@@ javaScript
-	result = [4, 8, 10].sort();
 

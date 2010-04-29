@@ -33,7 +33,7 @@
 	function add(x, y) {...}
 
 	// (almost) the same as
-	var add = function (x, y) {...}
+	var add = function (x, y) {...};
 
 !SLIDE bullets
 # Scope #
@@ -68,7 +68,7 @@
 ## missing parameters are undefined ##
 ## more arguments are ignored: ##
 	@@@ javaScript
-	function add(x, y) { return x + y; }
+	var add = function (x, y) { return x + y; }
 
 	result = add(2, 3, 4)
 
@@ -76,9 +76,9 @@
 # Pseudo parameter: arguments #
 
 	@@@ javaScript
-	function add() {
-		var sum = 0;
-		for (var i = 0; i < arguments.length; i++) {
+	var add = function () {
+		var sum = 0, i;
+		for (i = 0; i < arguments.length; i += 1) {
 			sum += arguments[i];
 		}
 		return sum;
@@ -88,7 +88,7 @@
 
 !SLIDE bullets
 # Pseudo parameter: this #
-* this contains reference to object of invocation
+* *this* contains reference to object of invocation
 * value determined by invocation pattern
 
 !SLIDE bullets
@@ -100,7 +100,7 @@
 
 !SLIDE execute
 # Function form #
-## this is bound to the global object ##
+## *this* is bound to the global object ##
 
 	@@@ javaScript
 	var func = function () { return this; };
@@ -108,7 +108,7 @@
 
 !SLIDE execute
 # Method form #
-## this is bound to the object to which the message was sent ##
+## *this* is bound to the object to which the message was sent ##
 
 	@@@ javaScript
 	rascal.func = function () { return this; };
@@ -117,12 +117,13 @@
 !SLIDE bullets
 # Constructor form #
 * JS is a prototypal oo language
-* syntax from a classical oo language → confusion
+* syntax from a classical oo language
+* → confusion
 
 !SLIDE bullets
-* invoking a func with "new" will create a new object
-* func.prototype linked as the new object's prototype
-* this is bound to the new object
+* invoking a function with *new* will create a new object
+* *func.prototype* linked as the new object's prototype
+* *this* is bound to the new object
 
 !SLIDE execute
 	@@@ javaScript
@@ -147,7 +148,3 @@
 
 	result = func.apply(rascal, ["more", "arguments"])
 
-
-<!--
-CLOSURE
--->

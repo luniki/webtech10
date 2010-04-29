@@ -3,14 +3,16 @@
 	@@@ javaScript
 	true false
 
-!SLIDE smbullets
+!SLIDE
 # falsy #
-* false
-* null
-* undefined
-* "" (empty string)
-* 0
-* NaN
+
+	@@@ javaScript
+	false
+	null
+	undefined
+	""
+	0
+	NaN
 
 !SLIDE bullets
 # truthy #

@@ -1,4 +1,4 @@
-!SLIDE
+!SLIDE subsection
 # Operators #
 
 !SLIDE
@@ -8,8 +8,8 @@
 !SLIDE
 # Comparison #
 	=== !===
-	== !=
-	< > <= >=
+	==  !=
+	< <= > >=
 
 !SLIDE
 # Compound assignment #

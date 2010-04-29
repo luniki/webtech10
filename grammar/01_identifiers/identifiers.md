@@ -5,8 +5,8 @@
 	/[a-zA-Z_$][a-zA-Z0-9_$]*/
 
 	/*
-		really unicode letters:
-		[A-Za-z\u00C0-\u1FFF\u2800-\uFFFD]
+	really unicode letters:
+	[A-Za-z\u00C0-\u1FFF\u2800-\uFFFD]
 	*/
 
 !SLIDE code

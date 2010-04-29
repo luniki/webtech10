@@ -1,11 +1,10 @@
 !SLIDE subsection
 # Regular Expressions #
 
-!SLIDE bullets
-* straight from Perl
-* regexp.exec, regexp.test
-* string.match, string.replace
-* string.search, string.split
+!SLIDE
+# RegExp literals #
+
+	var number = /^-?\d+$/i;
 
 !SLIDE execute
 	@@@ javaScript

@@ -3,8 +3,7 @@
 
 * UCS 2 (not UTF-16)
 * immutable
-* "foo" === "foo"
-* 'bar' or "bar"
+* "foo" === 'foo'
 
 !SLIDE execute
 
@@ -17,7 +16,7 @@
 # length Property #
 
 	@@@ javaScript
-	// wrong w/ surrogate pairs
+	// but: wrong w/ surrogate pairs
 	result = "23".length;
 
 !SLIDE

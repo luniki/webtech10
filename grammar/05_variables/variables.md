@@ -1,4 +1,4 @@
-!SLIDE
+!SLIDE subsection
 # Variables #
 
 !SLIDE
@@ -11,7 +11,7 @@
 
 	@@@ javaScript
 	var a;
-	result = a;
+	result = a === undefined;
 
 !SLIDE bullets
 # undefined #
