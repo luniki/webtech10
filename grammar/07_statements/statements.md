@@ -40,7 +40,7 @@
 	}
 
 !SLIDE bullets
-# Completion Specification Type #
+# Completion Type #
 * break
 * continue
 * return

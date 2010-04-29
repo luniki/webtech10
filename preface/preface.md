@@ -10,7 +10,7 @@
 
 !SLIDE bullets
 # JavaScript is *really* good! #
-* lightweight + expressive
+* very expressive
 * functional programming is fun!
 
 !SLIDE center

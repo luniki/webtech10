@@ -5,7 +5,7 @@
 # Number
 
 * single number type
-* only 64 bit float (IEE 754 double)
+* only 64 bit float (IEEE 754 double)
 * no integers
 
 !SLIDE execute
