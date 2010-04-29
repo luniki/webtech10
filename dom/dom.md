@@ -160,11 +160,11 @@
 ## *node*.style.*stylename* ##
 
 	@@@ javaScript
-	my_anchor.fontSize = "24px";
+	my_textarea.fontSize = "24px";
 
 !SLIDE bullets
 # Making elements #
-* my_anchor = document.createElement("a")
+* my_button = document.createElement("button")
 * my_text = document.createTextNode("lorem ipsum")
 * **But:** new nodes not yet in the document
 
