@@ -178,6 +178,17 @@
 * *parent*.removeChild(*child*)
 * *node*.parentNode.removeChild(*node*)
 
+!SLIDE bullets
+# innerHTML property #
+* not official part of the DOM
+* yet supported by all modern browsers
+* very powerful!
+
+!SLIDE code
+# innerHTML property #
+	@@@ javaScript
+	table.innerHTML = "<tr><th>Name</th><th>Type</th><th>Value</th></tr>";
+
 !SLIDE subsection
 # Events #
 
