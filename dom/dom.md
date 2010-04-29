@@ -28,7 +28,7 @@
 		// scripts are executed in the order
 		// in which they appear
 	</script>
-
+	[…]
 	<script>
 		// and have the same execution context
 		// (same window object, global vars …)
@@ -47,6 +47,10 @@
 	<noscript>
 		<h1>JavaScript has to be activated.</h1>
 	</noscript>
+
+!SLIDE
+# Scripts can only access and manipulate document elements that appear before the script. #
+
 
 !SLIDE subsection
 # \<DISCLAIMER> #
@@ -112,13 +116,6 @@
 <br>
 *from: Flanagan, D. 2006 Javascript: the Definitive Guide. 5th. O'Reilly & Associates, Inc.*
 
-!SLIDE bullets
-# Nodes #
-* Element (Node.ELEMENT_NODE)
-* Text (Node.TEXT_NODE)
-* Comment (Node.COMMENT_NODE)
-* Attr (Node.ATTRIBUTE_NODE)
-
 !SLIDE
 # Finding elements #
 
@@ -143,19 +140,19 @@
 
 !SLIDE bullets
 # Modifying an element #
-## \<script> tags' properties
+## \<textarea> tags' properties
 
-* href
+* value
 * id
-* className *(!)*
+* className *(not class!)*
 * title
 
 !SLIDE
 # Modifying an element #
 
 	@@@ javaScript
-	var old_href = my_anchor.href;
-	my_anchor.href = "http://rascals.example.com";
+	var old_content = my_textarea.value;
+	my_textarea.value = "lorem ipsum";
 
 !SLIDE
 # Manipulating style #
@@ -204,6 +201,11 @@
 * keydown/keypress/keyup
 * reset/submit
 
+!SLIDE smbullets
+# Window events #
+* load
+* unload
+
 !SLIDE
 # Attaching event handler #
 ## *(W3C style)* ##
@@ -216,6 +218,13 @@
 
 	my_img.addEventListener("click", func, false);
 
+!SLIDE
+# load event #
+	@@@ javaScript
+	window.addEventListener("load", function (event) {
+		alert("Just loaded");
+	}, false);
+
 !SLIDE center
 # Event propagation #
 ![eventflow](eventflow.png)
@@ -227,6 +236,9 @@
 * capturing phase (last parameter of #addEventListener)
 * target phase (event.preventDefault())
 * bubbling phase (event.stopPropagation())
+
+!SLIDE
+# The value of *this* in an event handler refers to the object on which the handler was registered. #
 
 !SLIDE subsection
 # \</DISCLAIMER> #
