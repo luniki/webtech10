@@ -70,22 +70,6 @@
 	false == null      // false
 	null  == undefined // true
 
-!SLIDE bullets
-# && #
-* guard operator
-* first operand truthy: second operand
-* else: first operand
-* useful for checking for null objects before accessing their attributes
-* var foo = o && o.getFoo();
-
-!SLIDE bullets
-# || #
-* default operator
-* first operand truthy: first operand
-* else: second operand
-* for setting default values:
-* var hoge = otherHoge || "default";
-
 !SLIDE
 # typeof #
 
