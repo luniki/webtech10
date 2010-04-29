@@ -1,3 +1,10 @@
+!SLIDE bullets
+# Good Parts #
+* functions
+* loose typing
+* dynamic objects
+* expressive object literal notation
+
 !SLIDE smbullets
 
 # that's it!
