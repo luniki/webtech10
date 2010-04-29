@@ -1,31 +1,17 @@
-!SLIDE bullets
-* object-oriented language
-* no provisions for IO
-* host-environment
-
 !SLIDE subsection
-# Why JavaScript?
-
-!SLIDE bullets
-## Most Successful Scripting Language? ##
-
-* implementations
-* deployed interpreters
-* lines of code
-
-!SLIDE bullets
-## Good parts ##
-* functions
-* loose typing
-* dynamic objects
-* expressive object literal notation
+# Why should I use JavaScript?
 
 
 !SLIDE bullets
-## Bad parts ##
-* legacy
-* good intentions
-* haste
+# No choice! #
+* The web is too important.
+* JS is in every browser.
+* Java applets failed.
+
+!SLIDE bullets
+# JavaScript is *really* good! #
+* lightweight + expressive
+* functional programming is fun!
 
 !SLIDE center
 ![firebug](firebug.png)
