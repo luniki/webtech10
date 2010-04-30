@@ -125,7 +125,7 @@
 	// document == window.document
 	var paras = document.getElementsByTagName("p");
 	var content = document.getElementById("content");
-	paras.getElementsByTagName("i");
+	paras[0].getElementsByTagName("i");
 
 !SLIDE smbullets
 # Traversing a document #
@@ -162,7 +162,7 @@
 ## *node*.style.*stylename* ##
 
 	@@@ javaScript
-	my_textarea.fontSize = "24px";
+	my_textarea.style.fontSize = "24px";
 
 !SLIDE bullets
 # Making elements #
