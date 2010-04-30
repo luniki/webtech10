@@ -40,11 +40,9 @@
 	}
 
 !SLIDE bullets
-# Completion Type #
 * break
 * continue
 * return
-* try/throw
 
 !SLIDE
 	@@@ javaScript

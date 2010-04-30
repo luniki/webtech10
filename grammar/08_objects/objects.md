@@ -77,8 +77,3 @@
 * still not found: undefined
 * → *delegating inheritance based on prototypes*
 
-!SLIDE bullets
-# Reflection #
-* typeof operator
-* anotherRascal.hasOwnProperty("surname")
-

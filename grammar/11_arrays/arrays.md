@@ -1,13 +1,14 @@
 !SLIDE subsection
 # Array
 
-!SLIDE
+!SLIDE execute
 # Array literals #
 
 	@@@ javaScript
 	var cities = ["Adrilankha",
 	              "Northport",
 	              "Candletown"];
+	result = cities[1];
 
 !SLIDE bullets
 # Arrays

@@ -7,39 +7,19 @@
 * Even true for inner functions living longer than their outer functions.
 
 !SLIDE execute
-# Global #
 	@@@ javaScript
-	var rot13 = {a: "m", b: "n", c: "o" /*, … */ };
-
-	var encode = function (char) {
-		return rot13[char];
-	};
-
-	result = encode("b");
-
-!SLIDE execute
-# Local #
-	@@@ javaScript
-	var encode = function (char) {
-		var rot13 = {a: "m", b: "n", c: "o" /*, … */};
-
-		return rot13[char];
-	};
-
-	result = encode("b");
-
-!SLIDE execute
-# Closure #
-	@@@ javaScript
-	var encode = (function () {
-
-		var rot13 = {a: "m", b: "n", c: "o" /*, … */};
-
-		return function (char) {
-			return rot13[char];
+	var quo = function (status) {
+		return {
+			get_status: function () {
+				return status;
+			}
 		};
+	};
 
-	}());
+	var myQuo = quo("amazed");
+	result = myQuo.get_status();
 
-	result = encode("b");
+<br>
+<br>
+>	from "JS: The Good Parts"
 

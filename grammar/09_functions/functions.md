@@ -27,6 +27,25 @@
 * Global variables are evil.
 
 !SLIDE
+
+	@@@ javaScript
+	var foo = function () {
+
+		var a = 3, b = 5;
+
+		var bar = function () {
+
+			var b = 7, c = 11;
+
+			a = a + b + c;
+
+		};
+
+		bar();
+	};
+
+
+!SLIDE
 # Function statement #
 
 	@@@ javaScript
@@ -48,7 +67,11 @@
 
 	foo();
 
-	result = window.bar === undefined;
+	try {
+		result = bar;
+	} catch (e) {
+		result = e.name + ": " + e.message;
+	}
 
 !SLIDE
 # return statement #
