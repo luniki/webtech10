@@ -24,7 +24,8 @@
 !SLIDE execute
 	@@@ javaScript
 	var header = "Content-Type: text/html";
-	result = header.replace(/^(.*): (.*)$/, "$1=$2");
+	result = header.replace(/^(.*): (.*)$/,
+	                        "$1=$2");
 
 !SLIDE execute
 	@@@ javaScript

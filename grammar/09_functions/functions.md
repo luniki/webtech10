@@ -155,10 +155,12 @@
 		this.surname = surname;
 	};
 	Rascal.prototype.fullName = function () {
-		return this["given-name"] + " " + this.surname;
+		return this["given-name"] + " "
+		       + this.surname;
 	};
 
-	var rascal = new Rascal("Borrah", "Minnevitch");
+	var rascal = new Rascal("Borrah",
+	                        "Minnevitch");
 
 	result = rascal.fullName();
 
@@ -169,5 +171,6 @@
 	@@@ javaScript
 	var func = function () { return this; };
 
-	result = func.apply(rascal, ["more", "arguments"])
+	result = func.apply(rascal,
+	                   ["more", "arguments"])
 

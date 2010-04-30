@@ -34,7 +34,7 @@
 		// (same window object, global vars …)
 	</script>
 
-!SLIDE
+!SLIDE small
 # external files #
 
 	@@@ html
@@ -72,7 +72,7 @@
 	// window.location.pathname
 	// …
 
-!SLIDE
+!SLIDE small
 # Changing location #
 
 	@@@ javaScript
@@ -106,7 +106,9 @@
 		</head>
 		<body>
 			<h1>An HTML Document</h1>
-			<p>This is a <i>simple</i> document.</p>
+			<p>
+				This is a <i>simple</i> document.
+			</p>
 		</body>
 	</html>
 
@@ -116,7 +118,7 @@
 <br>
 *from: Flanagan, D. 2006 Javascript: the Definitive Guide. 5th. O'Reilly & Associates, Inc.*
 
-!SLIDE
+!SLIDE small
 # Finding elements #
 
 	@@@ javaScript
@@ -187,7 +189,9 @@
 !SLIDE code
 # innerHTML property #
 	@@@ javaScript
-	table.innerHTML = "<tr><th>Name</th><th>Type</th><th>Value</th></tr>";
+	table.innerHTML = "<tr><th>Name</th>"+
+	                  "<th>Type</th>"+
+	                  "<th>Value</th></tr>";
 
 !SLIDE subsection
 # Events #
@@ -229,7 +233,7 @@
 
 	my_img.addEventListener("click", func, false);
 
-!SLIDE
+!SLIDE small
 # load event #
 	@@@ javaScript
 	window.addEventListener("load", function (event) {
