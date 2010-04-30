@@ -21,9 +21,9 @@
 > http://www.manning.com/resig/
 
 !SLIDE
-# Mozilla JavaScript Core Reference #
-> https://developer.mozilla.org/en/JavaScript
+## Mozilla JavaScript Core Reference ##
+### https://developer.mozilla.org/en/JavaScript ###
 
-# Mozilla JavaScript DOM Reference #
-> https://developer.mozilla.org/en/DOM
+## Mozilla JavaScript DOM Reference ##
+### https://developer.mozilla.org/en/DOM ###
 
