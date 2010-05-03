@@ -231,7 +231,7 @@
 		alert("user clicked on " + my_img.src);
 	};
 
-	my_img.addEventListener("click", func, false);
+	my_img.addEventListener("click", handler, false);
 
 !SLIDE small
 # load event #
