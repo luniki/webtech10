@@ -1,4 +1,6 @@
 !SLIDE title-slide
 
-# JavaScript #
+# HTML 5
+# CSS 3
+# ECMAScript 5
 
