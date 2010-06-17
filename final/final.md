@@ -1,20 +1,16 @@
-!SLIDE bullets
-# Good Parts #
-* functions
-* loose typing
-* dynamic objects
-* expressive object literal notation
+!SLIDE
+TODO Zusammenfassung
 
 !SLIDE smbullets
 
 # that's it!
 
 ## slides ##
-* http://webtech10.heroku.com
-* http://github.com/luniki/webtech10
+* TODO http://webtech10.heroku.com
+* TODO http://github.com/luniki/webtech10
 
 ## links ##
-* http://delicious.com/luniki/webtech10
+* TODO http://delicious.com/luniki/webtech10
 
 <br>
 ### <mlunzena@uos.de> ###
