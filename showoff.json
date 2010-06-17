@@ -5,7 +5,11 @@
     {"section":"title"},
     {"section":"about_me"},
     {"section":"links"},
-    {"section":"history"},
+
+    {"section":"html5"},
+    {"section":"css5"},
+    {"section":"ecma5"},
+
     {"section":"final"},
     {"section":"attributions"}
   ]
