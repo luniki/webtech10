@@ -1,8 +1,8 @@
 !SLIDE smbullets
 ## Slides ##
-* http://webtech10.heroku.com
-* http://github.com/luniki/webtech10
+* TODO http://webtech10.heroku.com
+* TODO http://github.com/luniki/webtech10
 
 ## Links ##
-* http://delicious.com/luniki/webtech10
+* TODO http://delicious.com/luniki/webtech10
 
