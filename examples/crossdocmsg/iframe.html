@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>Cross-Document Messaging Example: iframe</title>
+ </head>
+ <body>
+  <p>The highesst prime number discovered so far is: <output id="result"></output></p>
+  <script>
+    window.addEventListener('message', receiver, false);
+    function receiver(e) {
+      console.log(e);
+      if (e.origin == 'http://gighay.virtuos.uos.de') {
+        if (e.data == 'Hello world') {
+          e.source.postMessage('Hello', e.origin);
+        } else {
+          alert(e.data);
+        }
+      }
+    }
+  </script>
+ </body>
+</html>
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form  madness</title>
+<style>
+  :invalid { background-color: red; }
+  label { display: block; font-family: monospace; font-size: 1.5em;}
+  input { display: block; margin-bottom: 2em; }
+</style>
+</head>
+<body>
+
+<label>&lt;input <b>autofocus</b>></label>
+  <input name="autofocus" autofocus>
+
+<label>&lt;input type='<b>range</b>' min='0' max='50' value='0'></label>
+  <input type="range" min="0" max="50" value="0">
+
+
+<label>&lt;input results='10' type='<b>search</b>'></label>
+  <input results="10" type="search">
+
+<label>&lt;input type='text' <b>placeholder</b>='Search inside'></label>
+  <input type="text" placeholder="Search inside">
+
+<label>&lt;input type='<b>color</b>'></label>
+  <input type="color" size="30" placeholder="Type a valid color here to validate">
+
+<label>&lt;input type='<b>number</b>'></label>
+  <input type="number" value="123">
+
+<label>&lt;input type='<b>email</b>'></label>
+  <input type="email" value="some@email.com">
+
+<label>&lt;input type='<b>datetime</b>'></label>
+  <input type='datetime'>
+
+<label>&lt;input type='<b>date</b>'></label>
+  <input type='date'>
+
+
+</body>
+</html>

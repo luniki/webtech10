@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>dnd</title>
+<style>
+  .hovering {
+    background-color: #f;
+  }
+</style>
+</head>
+<body>
+<p>What fruits do you like?</p>
+<ol id="drag_zone">
+ <li draggable data-value="fruit-apple">Apples</li>
+ <li draggable data-value="fruit-orange">Oranges</li>
+ <li draggable data-value="fruit-pear">Pears</li>
+</ol>
+
+
+<p>Drop your favourite fruits below:</p>
+<ol id="drop_zone" style="border: 1px solid #ccc; min-height: 2em;"></ol>
+
+<script>
+  var internalDNDType = 'text/x-example'; // set this to something specific to your site
+
+  var dragZone = document.getElementById("drag_zone");
+
+  dragZone.addEventListener("dragstart", function (event) {
+    console.log(event.target.textContent);
+    event.target.parentNode.style.border = "4px solid red";
+    event.dataTransfer.setData("text/x-example", event.target.textContent);
+  }, false);
+
+  dragZone.addEventListener('dragend', function(event) {
+    event.target.parentNode.style.border = "";
+  }, false);
+
+  var dropZone = document.getElementById("drop_zone");
+
+  dropZone.addEventListener("dragenter", function (event) {
+    if (event.preventDefault) event.preventDefault();
+    this.className = 'hovering';
+  }, false);
+
+  dropZone.addEventListener("dragover", function (event) {
+    if (event.preventDefault) event.preventDefault();
+    event.dataTransfer.dropEffect = 'move';
+    }, false);
+
+  dropZone.addEventListener("dragleave", function (event) {
+    if (event.preventDefault) event.preventDefault();
+    this.className = '';
+  }, false);
+
+  dropZone.addEventListener("drop", function (event) {
+    if (event.preventDefault) event.preventDefault();
+    var li = document.createElement('li');
+    var data = event.dataTransfer.getData("text/x-example");
+    if (data) {
+      li.textContent = event.dataTransfer.getData("text/x-example");
+    }
+    else {
+      console.log(event);
+    }
+    event.target.appendChild(li);
+  }, false);
+</script>
+</body>
+</html>

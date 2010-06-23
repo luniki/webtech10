@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Border Radius</title>
+  <style>
+    div {
+      color: white;
+      background: #ccc;
+      padding: 50px;
+      margin: 15px;
+      width: 500px;
+    }
+  </style>
+</head>
+<body>
+
+<p>Let's dive into some examples.</p>
+
+<div style="border-radius: 25px;">Four rounded corners</div>
+<pre>
+<code>border-radius: 25px;</code>
+</pre>
+
+<div style="border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;">Two rounded corners</div>
+<pre>
+<code>border-bottom-left-radius: 40px;
+border-bottom-right-radius: 40px;</code>
+</pre>
+
+<div style="border-bottom-left-radius:40px;border-bottom-right-radius:40px;border-top-left-radius:10px;border-top-right-radius: 10px;">Four rounded corners, the bottom corners with a 40 pixel radius and the top corners with a 10 pixel radius</div>
+<pre>
+<code>border-bottom-left-radius: 40px;
+border-bottom-right-radius: 40px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;</code>
+</pre>
+
+<div style="border-bottom-right-radius:120px;">One rounded corner with a radius of 120 pixels</div>
+<pre>
+<code>border-bottom-right-radius: 120px;</code>
+</pre>
+
+<div style="border-radius:120px 20px;">Four rounded corners, two with a radius of 20 pixels and the other two with a radius of 120 pixels</div>
+<pre>
+<code>border-radius: 120px 20px;</code>
+</pre>
+
+<div style="border-radius:120px / 20px;">Rounded corners with a radius of 120 pixels along the x-axis and 20 pixels along the y-axis</div>
+<pre>
+<code>border-radius: 120px / 20px;</code>
+</pre>
+
+<div style="background: url(tartan.png);border-radius:30px;">Rounded corners with a background image</div>
+<pre>
+<code>background: url(tartan.png);
+border-radius: 30px;</code>
+</pre>
+</body>
+</html>
+
