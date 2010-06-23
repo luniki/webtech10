@@ -1,6 +1,5 @@
 !SLIDE title-slide
-Emerging Web Technologies
-
+# Emerging Web Technologies
 !SLIDE
 HTML5 ~= HTML  + CSS  + JS APIs
 

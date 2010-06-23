@@ -1,7 +1,7 @@
+!SLIDE subsection
+# Html 5 #
+
 !SLIDE
-HTML5 ~= HTML  + CSS  + JS APIs
-
-
 Implementations and specifications have to do a delicate dance together. You
 don't want implementations to happen before the specification is finished,
 because people start depending on the details of implementations and that
@@ -12,71 +12,123 @@ here, but we just have to muddle on through.
 
 ein Mozilla-Entwickler auf public-html@w3.org
 
-!SLIDE subsection
-# HTML 5 #
-
 !SLIDE
-# HTML 5 in 5 seconds #
+# Html 5 in 5 seconds #
 .link http://www.w3.org/TR/html5/syntax.html#the-doctype
 
-  <!DOCTYPE html>
+    <!DOCTYPE html>
 
+!SLIDE
+# Neue semantische Elemente #
 
-* neue semantische Elemente
+!SLIDE
+    <section>
+### thematische Gruppierung von Inhalt typischerweise mit Überschrift: Kapitel, tabbed pages ###
+!SLIDE
+    <nav>
+### Navigationslinks ###
+!SLIDE
+    <article>
+### eigenständige Komponente in einer Seite, die auch unabhängig vom Rest verbreited werden kann (Newsfeeds…): Forumsbeitrag, Zeitungsartikel, Blogeintrag, Kommentar
+!SLIDE
+    <aside>
+### Teil einer Seite, der nur geringen Bezug zum Rest der Seite hat. In gedruckten Werken häufig als Seitenleiste abgesetzt.
+!SLIDE
+    <hgroup>
+### Gruppierung von mehreren Überschriften (&lt;h1>-&lt;h6>)
+!SLIDE
+    <header>
+### enthält Sachen wie Überschrift einer &lt;section>, Einleitungen, Navigationshilfen, Suchformulare, Logos
+!SLIDE
+    <footer>
+### enthält Autor einer &lt;section>, Links, Copyright usw.
+!SLIDE
+    <time>
+### repräsentiert eine Zeitangabe
+!SLIDE
+    <mark>
+### ein Stück Text, mit Textmarker angestrichen
 
-<section> thematische Gruppierung von Inhalt typischerweise mit Überschrift: Kapitel, tabbed pages
-<nav> Navigationslinks
-<article> eigenständige Komponente in einer Seite, die auch unabhängig vom Rest verbreited werden kann (Newsfeeds..): Forumsbeitrag, Zeitungsartikel, Blogeintrag, Kommentar
-<aside> Teil einer Seite, der nur geringen Bezug zum Rest der Seite hat. In gedruckten Werken häufig als Seitenleiste abgesetzt.
-<hgroup> Gruppierung von mehreren Überschriften (<h1>-<h6>)
-<header> enthält Sachen wie Überschrift einer <section>, Einleitungen, Navigationshilfen, Suchformulare, Logos
-<footer> enthält Autor einer <section>, Links, Copyright usw.
-<time> repräsentiert eine Zeitangabe
-<mark> ein Stück Text, der wie mit einem Textmarker angestrichen wurde
+!SLIDE TODO
+Bild
 
-Achtung: Internet Explorer (< 9) erlauben kein CSS für diese Elemente. Mit JS gibt es aber einen Trick:
+!SLIDE smaller
+# Internet Explorer Blues #
+### Internet Explorer (&lt; 9) erlaubt kein CSS für diese Elemente, aber:
 
-<style> mark { background: #ffff88; } </style>
-<script>document.createElement("mark");</script>
-<p>
-  Far far away, <mark>behind the word mountains</mark>, far from the countries
-  Vokalia and Consonantia, there live the blind texts.
-</p>
+    @@@ HTML
+    <style>
+      mark { background: #ffff88; }
+    </style>
+    <script>
+      document.createElement("mark");
+    </script>
+    <p>
+      Far far away, behind the
+      <mark>word mountains</mark>
+    </p>
+<hr>
+#### Far far away, behind the <mark>word mountains</mark>
 
-
+!SLIDE TODO lieber-ein-bild
 http://diveintohtml5.org/examples/blog-original.html
 http://diveintohtml5.org/examples/blog-html5.html
 
 
-* Beispiel: Canvas
+!SLIDE
+# Canvas #
+
 <canvas id="canvas" width="400" height="400"></canvas>
 <script>
-  var canvasContext = document.getElementById("canvas").getContext("2d");
-  canvasContext.fillStyle = 'orange';
-  canvasContext.fillRect(10, 10, 200, 200);
+var ctx = document.getElementById("canvas").getContext("2d");
+ctx.fillStyle = 'orange';
+ctx.fillRect(10, 10, 200, 200);
 
-  canvasContext.fillStyle = "rgba(0, 127, 127, 0.5)";
+ctx.fillStyle = "rgba(0, 127, 127, 0.5)";
 
-  canvasContext.beginPath();
-  canvasContext.arc(200, 200, 150, 0, Math.PI * 2, true);
-  canvasContext.closePath();
-  canvasContext.fill();
+ctx.beginPath();
+ctx.arc(200, 200, 150, 0, Math.PI * 2, true);
+ctx.closePath();
+ctx.fill();
 </script>
 
+!SLIDE tiny
+    @@@ HTML
+    <canvas id="canvas" width="400"
+            height="400"></canvas>
+    <script>
+    var canvas = document.getElementById("canvas"),
+        ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = 'orange';
+    ctx.fillRect(10, 10, 200, 200);
+
+    ctx.fillStyle = "rgba(0, 127, 127, 0.5)";
+
+    ctx.beginPath();
+    ctx.arc(200, 200, 150, 0, Math.PI * 2, true);
+    ctx.closePath();
+    ctx.fill();
+    </script>
+
+!SLIDE
 Kurzes Minibeispiel
 http://diveintohtml5.org/examples/canvas-halma.html
 
+!SLIDE
 * Video/Audio
 
   &lt;video src="pr6.webm"></video>
   &lt;video src="pr6.webm" width="320" height="240"></video>
   &lt;video src="pr6.webm" width="320" height="240" controls></video>
 
+!SLIDE
 Video Containers
   - Ogg .ogv
   - MPEG4  .mp4
   - WebM .webm
 
+!SLIDE
   - IE: -
   - FF: Ogg
   - Safari: MPEG4
@@ -85,25 +137,28 @@ Video Containers
   - Iphone: MPEG4
   - Android: MPEG4
 
+!SLIDE
 Video for Everybody
-
 http://camendesign.com/code/video_for_everybody
 
+!SLIDE
 <audio>
 
 
-
-
-* Geolocation (Geolocation Working Group)
+!SLIDE
+Geolocation (Geolocation Working Group)
 http://www.w3.org/TR/geolocation-API/
 
+!SLIDE
 your IP address,
 your wireless network connection,
 which cell tower your phone is talking to,
 or dedicated GPS hardware
 
+!SLIDE
 FF 3.5, Safari 5, Chrome 5, Opera 10.60
 
+!SLIDE
 function supports_geolocation() {
   return !!navigator.geolocation;
 }
@@ -115,8 +170,7 @@ function showMap(position) {
 // One-shot position request.
 navigator.geolocation.getCurrentPosition(showMap);
 
-http://diveintohtml5.org/detect.html#geolocation
-
+!SLIDE
 coords.latitude
 coords.longitude
 coords.altitude
@@ -124,19 +178,27 @@ coords.accuracy
 coords.heading
 coords.speed
 
+!SLIDE
+http://diveintohtml5.org/detect.html#geolocation
 
 
+
+!SLIDE
 * "local storage"
 
 
+!SLIDE
 Cookies werden mit jedem Request unverschlüsselt versendet und sind höchstens 4Kb groß.
 
+!SLIDE
 * mehr Platz
 * im Browser, nicht im Request
 * persistent
 
+!SLIDE
 IE 8, FF 3.5, Safari 4, Chrome 4, Opera 10.50
 
+!SLIDE
 function supports_html5_storage() {
   return ('localStorage' in window) && window['localStorage'] !== null;
 }
@@ -148,21 +210,28 @@ localStorage.setItem("bar", baz)
 localStorage["bar"] = baz
 
 
+!SLIDE
 * "offline web applications"
 
+!SLIDE
 FF, Safari, Chrome, Opera
 
+!SLIDE
 <!DOCTYPE html>
 <html lang="en" manifest="halma.manifest">
 
+!SLIDE
 CACHE MANIFEST
 halma.html
 ../halma-localstorage.js
 
-text/cache-manifest .manifest
+!SLIDE
+AddType text/cache-manifest .manifest
 
+!SLIDE
 * Forms
 
+!SLIDE
 Neue Input-Types:
 
 search, tel, url,
@@ -171,17 +240,21 @@ month, week, time,
 datetime-local, number,
 range, color, usw.
 
+!SLIDE
 Neue Input-Attribute:
 
 autofocus, placeholder, max, min, required, usw.
 
+
+!SLIDE
 * Drag and drop
 http://www.w3.org/TR/html5/editing.html#dnd
+.link zur demo
 
-
+!SLIDE TODO
 * Cross-document messaging http://dev.w3.org/html5/postmsg/
-* WebSocket http://www.w3.org/TR/websockets/
 
+!SLIDE TODO
 * Workers
 Web Workers http://www.w3.org/TR/workers/
 

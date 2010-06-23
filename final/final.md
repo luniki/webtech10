@@ -13,4 +13,4 @@ TODO Zusammenfassung
 * TODO http://delicious.com/luniki/webtech10
 
 <br>
-### <mlunzena@uos.de> ###
+<h3 style="text-align: center;"> &lt;mlunzena@uos.de> </h3>

@@ -1,0 +1,29 @@
+@import url("http://fonts.googleapis.com/css?family=Lobster");
+h1, h2 { font-family: "Lobster", "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", "Verdana", "Arial", "Helvetica", sans-serif; }
+/*h1, h2, h3, h4, h5 { font-family: 'Lobster', arial, serif; }*/
+
+h3 { text-align: left; }
+
+mark { background: #ffff88; }
+
+p, li, dd, dt, pre, td {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", "Verdana", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+
+.tiny {
+  font-size: 50%;
+}
+
+.TODO {
+  background: #fee;
+}
+
+.TODO:before {
+  content: "TODO: ";
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 2em;
+}
