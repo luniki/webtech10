@@ -12,72 +12,12 @@ here, but we just have to muddle on through.
 
 ein Mozilla-Entwickler auf public-html@w3.org
 
-* History
+!SLIDE subsection
+# HTML 5 #
 
-HTML 1997 - 2004
-
-1997
-  HTML 4.0
-  Auflösen der HTML Working Group
-1998
-  - XML 1.0
-  - Workshop "Shaping the Future of HTML": "Has W3C given up on HTML?"
-
-  In discussions, it was agreed that further extending HTML 4.0 would be
-  difficult, as would converting 4.0 to be an XML application. The proposed way
-  to break free of these restrictions is to make a fresh start with the next
-  generation of HTML based upon a suite of XML tag-sets.
-
-  - Reformulating HTML in XML → XHTML 1.0 (mit Schlupfloch "text/html" anstatt "application/xhtml+xml")
-1999
-  - XHTML Extended Forms → XForms Working Group
-
-2001
-  - XHTML 1.1 (ohne "Anhang C"-Schlupfloch, also verpflichtender MIME-Type und damit mit "Draconian Error Handling":
-    "well-formedness errors be treated as fatal errors"
-
-2004
-  - W3C Workshop on Web Applications and Compound Documents
-  - Präsentation der Vision von Mozilla und Opera:
-    - rückwärtskompatibel, vernünftige Fehlerbehandlung, praktischer Nutzen, offener Entwicklungsprozess
-  - "Should the W3C develop declarative extension to HTML and CSS and imperative
-     extensions to DOM, to address medium level Web Application requirements, as
-     opposed to sophisticated, fully-fledged OS-level APIs? (proposed by Ian
-     Hickson, Opera Software)"
-  - 11 to 8
-  - "At present, W3C does not intend to put any resources into the third
-     straw-poll topic: extensions to HTML and CSS for Web Applications, other
-     than technologies being developed under the charter of current W3C Working
-     Groups."
-  - WHAT Working Group (Web Hypertext Application Technology)
-
-    "The Web Hypertext Applications Technology Working Group is a loose,
-    unofficial, and open collaboration of Web browser manufacturers and
-    interested parties. The group aims to develop specifications based on HTML
-    and related technologies to ease the deployment of interoperable Web
-    Applications, with the intention of submitting the results to a standards
-    organisation. This submission would then form the basis of work on formally
-    extending HTML in the standards track."
-
-2006
-  - Tim Berners-Lee: "Reinventing HTML" Zusammenarbeit W3C und WHAT WG
-  - HTML5
-
-2007
-  - 5. W3C HTML Working Group
-
-2008
-  - erster W3C Working Draft HTML5
-
-2009
-  - Auflösung XHTML 2 Working Group
-
-
-
-
-
-* HTML 5 in 5 seconds:
-http://www.w3.org/TR/html5/syntax.html#the-doctype
+!SLIDE
+# HTML 5 in 5 seconds #
+.link http://www.w3.org/TR/html5/syntax.html#the-doctype
 
   <!DOCTYPE html>
 
@@ -128,9 +68,9 @@ http://diveintohtml5.org/examples/canvas-halma.html
 
 * Video/Audio
 
-  <video src="pr6.webm"></video>
-  <video src="pr6.webm" width="320" height="240"></video>
-  <video src="pr6.webm" width="320" height="240" controls></video>
+  &lt;video src="pr6.webm"></video>
+  &lt;video src="pr6.webm" width="320" height="240"></video>
+  &lt;video src="pr6.webm" width="320" height="240" controls></video>
 
 Video Containers
   - Ogg .ogv
