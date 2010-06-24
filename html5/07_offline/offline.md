@@ -14,7 +14,7 @@
     clock.html
     clock.js
 
-!SLIDE
+!SLIDE smaller
 # MIME-Typ!
     AddType text/cache-manifest .manifest
 

@@ -2,9 +2,6 @@
 # Web Workers
 * <http://www.w3.org/TR/workers/>
 
-!SLIDE
-# → Beispiel (Opera)
-
 !SLIDE smaller
     @@@ javascript
     // worker.html
@@ -26,4 +23,8 @@
       // found a prime!
       postMessage(n);
     }
+
+!SLIDE
+# → Beispiel
+## (Opera)
 

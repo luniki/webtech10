@@ -11,7 +11,8 @@
 * border-bottom-right-radius
 
 !SLIDE
-# → Beispiel (Opera)
+# → Beispiel
+## (Opera)
 
 !SLIDE
 # Multiple backgrounds

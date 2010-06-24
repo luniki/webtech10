@@ -3,4 +3,5 @@
 * <http://www.w3.org/TR/html5/editing.html#dnd>
 
 !SLIDE
-# → Beispiel (Firefox)
+# → Beispiel
+## (Firefox)
