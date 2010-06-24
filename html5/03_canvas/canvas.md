@@ -1,11 +1,10 @@
-
-
 !SLIDE
 # Canvas #
 
 <canvas id="canvas" width="400" height="400"></canvas>
 <script>
-var ctx = document.getElementById("canvas").getContext("2d");
+var canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext("2d");
 ctx.fillStyle = 'orange';
 ctx.fillRect(10, 10, 200, 200);
 
@@ -19,12 +18,11 @@ ctx.fill();
 
 !SLIDE tiny
     @@@ HTML
-    <canvas id="canvas" width="400"
-            height="400"></canvas>
+    <canvas id="canvas" width="400" height="400">
+    </canvas>
     <script>
     var canvas = document.getElementById("canvas"),
         ctx = canvas.getContext("2d");
-
     ctx.fillStyle = 'orange';
     ctx.fillRect(10, 10, 200, 200);
 
@@ -37,6 +35,4 @@ ctx.fill();
     </script>
 
 !SLIDE
-Kurzes Minibeispiel
-http://diveintohtml5.org/examples/canvas-halma.html
-
+# [Beispiel](http://diveintohtml5.org/examples/canvas-halma.html)

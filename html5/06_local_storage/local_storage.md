@@ -1,26 +1,29 @@
+!SLIDE bullets
+# Web storage
+* <http://www.w3.org/TR/webstorage/>
 
-!SLIDE
-* "local storage"
+!SLIDE bullets
+# Cookies …
+* mit jedem Request
+* unverschlüsselt
+* max. 4Kb
 
-
-!SLIDE
-Cookies werden mit jedem Request unverschlüsselt versendet und sind höchstens 4Kb groß.
-
-!SLIDE
+!SLIDE bullets
+# Web storage …
 * mehr Platz
 * im Browser, nicht im Request
 * persistent
 
-!SLIDE
-IE 8, FF 3.5, Safari 4, Chrome 4, Opera 10.50
+!SLIDE smaller
+    @@@ javascript
+    function supports_html5_storage() {
+      return ('localStorage' in window)
+        && window['localStorage'] !== null;
+    }
 
-!SLIDE
-function supports_html5_storage() {
-  return ('localStorage' in window) && window['localStorage'] !== null;
-}
+    localStorage.getItem("foo")
+    localStorage["foo"]
 
-localStorage.getItem("foo")
-localStorage["foo"]
+    localStorage.setItem("bar", baz)
+    localStorage["bar"] = baz
 
-localStorage.setItem("bar", baz)
-localStorage["bar"] = baz

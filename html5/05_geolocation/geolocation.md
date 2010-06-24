@@ -1,36 +1,40 @@
-!SLIDE
-Geolocation (Geolocation Working Group)
-http://www.w3.org/TR/geolocation-API/
+!SLIDE bullets
+# Geolocation
+## Geolocation Working Group
+* <http://www.w3.org/TR/geolocation-API/>
+
+!SLIDE bullets
+* Beispiel:
+* <http://diveintohtml5.org/detect.html#geolocation>
+
+!SLIDE bullets
+* IP-Adresse
+* WLAN-Netzwerk
+* Mobilfunkmast
+* GPS
+
+!SLIDE smaller
+    @@@ javascript
+    function supports_geolocation() {
+      return !!navigator.geolocation;
+    }
+
+    function showMap(pos) {
+      // Show a map centered at
+      // pos.coords.latitude
+      // pos.coords.longitude
+    }
+
+    // One-shot position request
+    navigator.geolocation
+             .getCurrentPosition(showMap);
 
 !SLIDE
-your IP address,
-your wireless network connection,
-which cell tower your phone is talking to,
-or dedicated GPS hardware
-
-!SLIDE
-FF 3.5, Safari 5, Chrome 5, Opera 10.60
-
-!SLIDE
-function supports_geolocation() {
-  return !!navigator.geolocation;
-}
-
-function showMap(position) {
-  // Show a map centered at (position.coords.latitude, position.coords.longitude).
-}
-
-// One-shot position request.
-navigator.geolocation.getCurrentPosition(showMap);
-
-!SLIDE
-coords.latitude
-coords.longitude
-coords.altitude
-coords.accuracy
-coords.heading
-coords.speed
-
-!SLIDE
-http://diveintohtml5.org/detect.html#geolocation
+    @@@ javascript
+    coords.latitude
+    coords.longitude
+    coords.altitude
+    coords.accuracy
+    coords.heading
+    coords.speed
 

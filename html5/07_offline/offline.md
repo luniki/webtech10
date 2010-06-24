@@ -1,21 +1,23 @@
-
-
-
-!SLIDE
-* "offline web applications"
+!SLIDE bullets
+# Offline Web applications
+* <http://www.w3.org/TR/html5/offline.html>
 
 !SLIDE
-FF, Safari, Chrome, Opera
+# clock.html
+    @@@ html
+    <!DOCTYPE html>
+    <html manifest="cache.manifest">
 
 !SLIDE
-<!DOCTYPE html>
-<html lang="en" manifest="halma.manifest">
+# cache.manifest
+    CACHE MANIFEST
+    clock.html
+    clock.js
 
 !SLIDE
-CACHE MANIFEST
-halma.html
-../halma-localstorage.js
+# MIME-Typ!
+    AddType text/cache-manifest .manifest
 
 !SLIDE
-AddType text/cache-manifest .manifest
-
+# → Beispiel
+## (Firefox)

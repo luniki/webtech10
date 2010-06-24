@@ -29,12 +29,11 @@
     <mark>
 ### ein Stück Text, mit Textmarker angestrichen
 
-!SLIDE TODO
-Bild
+!SLIDE center
+![semantic](img/semanticelements.png)
 
 !SLIDE smaller
 # Internet Explorer Blues #
-### Internet Explorer (&lt; 9) erlaubt kein CSS für diese Elemente, aber:
 
     @@@ HTML
     <style>
@@ -47,10 +46,4 @@ Bild
       Far far away, behind the
       <mark>word mountains</mark>
     </p>
-<hr>
-#### Far far away, behind the <mark>word mountains</mark>
-
-!SLIDE TODO lieber-ein-bild
-http://diveintohtml5.org/examples/blog-original.html
-http://diveintohtml5.org/examples/blog-html5.html
 
