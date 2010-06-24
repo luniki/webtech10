@@ -4,17 +4,18 @@
   <title>Cross-Document Messaging Example</title>
  </head>
  <body>
-  <iframe src="iframe.html"></iframe>
+  <iframe src="http://coll.virtuos.uni-osnabrueck.de/webtech10/examples/crossdocmsg/iframe.html"></iframe>
   <p>Antwort vom iframe: <output id="result"></output></p>
   <script>
 
     window.addEventListener('message', function (e) {
+      console.log(e);
       document.getElementById("result").innerHTML = e.data;
     }, false);
 
     window.addEventListener("load", function () {
       var o = document.getElementsByTagName('iframe')[0];
-      var result = o.contentWindow.postMessage('Hello iframe', 'http://gighay.virtuos.uos.de');
+      var result = o.contentWindow.postMessage('Hello iframe', 'http://coll.virtuos.uos.de');
     }, false);
   </script>
  </body>

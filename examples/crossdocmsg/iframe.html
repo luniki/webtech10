@@ -7,6 +7,7 @@
   <p>Nachricht von auﬂen: <output id="result"></output></p>
   <script>
     window.addEventListener('message', function (e) {
+      console.log(e);
       document.getElementById("result").innerHTML = e.data;
       e.source.postMessage('Hello source', e.origin);
     }, false);
