@@ -11,10 +11,16 @@
 * border-bottom-right-radius
 
 !SLIDE
-# → Beispiel
+# → [Beispiel](http://coll.virtuos.uos.de/webtech10/examples/borderradius/round.html)
 ## (Opera)
 
-!SLIDE
+!SLIDE smaller
 # Multiple backgrounds
-# → [Beispiel](http://people.opera.com/zibin/multiple_background_image_zibin.html)
+## → [Beispiel](http://people.opera.com/zibin/multiple_background_image_zibin.html)
+
+    @@@ css
+    background:
+				url(img/0.png),
+				url(img/1.png),
+				url(img/2.jpg);
 

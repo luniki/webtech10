@@ -10,5 +10,5 @@
 
 !SLIDE bullets
 # Unterschied <code>opacity</code> und <code>rgba</code>
-* → Beispiel (Opera)
+* → [Beispiel](http://coll.virtuos.uos.de/webtech10/examples/rgba/rgba.html) (Opera)
 

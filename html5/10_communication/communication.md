@@ -3,4 +3,4 @@
 * <http://dev.w3.org/html5/postmsg/>
 
 !SLIDE
-# → Beispiel
+# → [Beispiel](http://coll.virtuos.uos.de/webtech10/examples/crossdocmsg/source.html)

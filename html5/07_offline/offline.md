@@ -19,5 +19,5 @@
     AddType text/cache-manifest .manifest
 
 !SLIDE
-# → Beispiel
+# → [Beispiel](http://coll.virtuos.uos.de/webtech10/examples/offline/)
 ## (Firefox)
