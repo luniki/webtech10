@@ -1,3 +1,0 @@
-!SLIDE smbullets
-
-* TODO Attributions
